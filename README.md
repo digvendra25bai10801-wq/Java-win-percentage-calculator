@@ -190,46 +190,7 @@ The displayed projected winner is **Chennai Super Kings** for this configured ma
 
 > These percentages represent normalized shares of the configured strength values. They are not calibrated real-world betting or match-win probabilities.
 
-## Testing Instructions
 
-Testing can be performed manually because the current project has no external testing framework.
-
-### Test 1 — Application startup
-
-1. Run `java IPLPredictor`.
-2. Confirm the Swing window opens.
-3. Confirm two team selectors, the `VS` label, logo/abbreviation areas, a **Predict Winner** button, and the result card are visible.
-
-**Expected result:** The application opens without a compilation/runtime error and shows an initial prediction.
-
-### Test 2 — Valid team selection
-
-1. Select two different teams.
-2. Click **Predict Winner**.
-3. Observe the predicted winner and both percentages.
-
-**Expected result:** The team with the larger configured strength is displayed as the predicted winner, and the percentages correspond to the normalized strength values.
-
-### Test 3 — Same-team validation
-
-1. Select the same team in both dropdowns.
-2. Click **Predict Winner**.
-
-**Expected result:** A warning dialog appears asking the user to select two different teams.
-
-### Test 4 — Missing-logo fallback
-
-1. Temporarily remove or rename one of the expected logo files.
-2. Run the program again.
-3. Select the affected team.
-
-**Expected result:** The application continues to run and displays the team's abbreviation instead of a logo.
-
-### Test 5 — Probability calculation
-
-Use a known pair such as Mumbai Indians (90) vs Chennai Super Kings (99) and verify that the UI shows approximately `47.6%` and `52.4%`.
-
-**Expected result:** Displayed values match the calculation documented above.
 
 ## Limitations
 
@@ -251,24 +212,6 @@ Use a known pair such as Mumbai Indians (90) vs Chennai Super Kings (99) and ver
 - Add visual charts for team comparisons and historical performance.
 - Package the desktop application as a distributable executable/JAR.
 
-## GitHub Upload Instructions
 
-From the project root:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit - IPL Match Predictor"
-git branch -M main
-git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPOSITORY>.git
-git push -u origin main
-```
-
-Replace `<YOUR-USERNAME>` and `<YOUR-REPOSITORY>` with your GitHub account and repository name.
-
-## License
-
-No license has been specified for this student project. Add a `LICENSE` file if a particular open-source license is required by your course or repository policy.
-=======
 # Java-win-percentage-calculator
 >>>>>>> 4e1d806c497e85e9a6603ab8b80fcdc3a0da7db1
