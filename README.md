@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IPL Match Predictor
 
 ## Overview
@@ -268,3 +269,6 @@ Replace `<YOUR-USERNAME>` and `<YOUR-REPOSITORY>` with your GitHub account and r
 ## License
 
 No license has been specified for this student project. Add a `LICENSE` file if a particular open-source license is required by your course or repository policy.
+=======
+# Java-win-percentage-calculator
+>>>>>>> 4e1d806c497e85e9a6603ab8b80fcdc3a0da7db1
